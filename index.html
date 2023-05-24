@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Felipe Cardoso - Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+
+        }
+        .profile-image:hover {
+        transform: scale(1.5);
+    }
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .navbar a {
+            display: inline-block;
+            color: #fff;
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .navbar:hover {
+        transform: scale(1.1);
+    }
+        
+        .sidebar {
+        /* outros estilos */
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+        background-color: #333;
+      
+        
+    }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .section:hover {
+            transform: scale(1.01);
+        }
+        @keyframes sidebar-animation {
+        0% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+        footer {
+            background-color: #555;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="profile-image" src="https://addressables-bytenfoods.s3.amazonaws.com/Images/01.%2BCaf%C3%A9%2Bda%2Bmanh%C3%A3-imagem.jpg" alt="Profile Image">
+        <h1>Felipe Cardoso</h1>
+    </div>
+    <div class="navbar">
+        <a href="#about">Sobre Mim</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+    </div>
+    <div class="sidebar">
+        <ul>
+           
+        </ul>
+    </div>
+    <div class="content">
+        <section id="about" class="section">
+            <h2>Sobre Mim</h2>
+            <p>Prazer, atualmente atuo de forma ativa no desenvolvimento de sistemas utilizando C# / .NET com arquitetura limpa e DDD. Ademais, possuo conhecimento e experiência em testes unitários utilizando o xUnit.
+            Além disso, utilizo AWS em meu dia a dia, possuindo conhecimento em deploys de aplicações .NET, serviços populares como S3, EC2, EBS, Route 53 e Billings.
+            Por conta do contato direto com a criação de sistemas, também possuo experiência e contato com bancos de dados, como por exemplo, MySql, Postgres e, de forma mais superficial, MongoDB.
+            Fora minha "especialidade" que estou mais habituado a produzir todos os dias, tive contato com a famosa Power Platform, utilizando SharePoint e Power Apps para criação de Intranets. A partir disso, pude dar treinamento para a LBV (Legião Boa Vontade) nesse grande SaaS que a Microsoft nos proporciona.
+            Também, já tive contato com o famoso "front-end", utilizando e possuindo conhecimento intermediário em React, HTML e CSS, podendo ajudar meus colegas de equipe quando necessário.
+            Para meus estudos, tenho muito interesse na área de dados e segurança, tendo estudado e criado alguns projetos em relação a ambos os assuntos!</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>C#</li>
+                <li>.NET Web APIs</li>
+                <li>AWS</li>
+                <li>Node.js</li>
+                <li>MySQL</li>
+                <li>Mongoose</li>
+                <li>Postgres</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projetos</h2>
+            <p>Aqui estão alguns dos meus projetos recentes:</p>
+            <ul>
+                <li><a href="https://www.sjc.sp.gov.br/noticias/2023/marco/28/cidade-sera-a-1%C2%AA-do-pais-a-usar-oculos-inteligentes-na-seguranca/">EyeD</a></li>
+                <li>Byten Foods - Cardápio em AR</li>
+                <li>Spirit&Script - Produção</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contato</h2>
+            <p><strong>Email:</strong> fehlipecardooso@gmail.com</p>
+            <p><strong>Número de Contato:</strong> 12991053488</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2023 Felipe Cardoso
+    </footer>
+</body>
+</html>
